@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>85" Edge 540T White/Red</title>
+  </head>
+  <body>
+    <!-- Overlay image Modal -->
+    <div class="overlay-container">
+      <div class="item-overlay">
+        <button class="item-overlay__btn">
+          <img
+            src="./assets/img//icon-close.svg"
+            alt="close image"
+            class="item-overlay__btn-img"
+          />
+        </button>
+        <div class="item-overlay__mainImg">
+          <img
+            src="./assets/img//image-product-1.jpg"
+            alt=""
+            class="item-overlay__img"
+          />
+          <button class="item-overlay__btnlft overlay-btn">
+            <img
+              src="./assets/img//icon-next.svg"
+              alt="next symbol image"
+              class="item-overlay__btnlft-img overlay-btn__img"
+            />
+          </button>
+          <button class="item-overlay__btnrgt overlay-btn">
+            <img
+              src="./assets/img//icon-next.svg"
+              alt="next symbol image"
+              class="item-overlay__btnrgt-img overlay-btn__img"
+            />
+          </button>
+        </div>
+        <div class="overlay-img__btns">
+          <button class="overlay-img__btn" data-img="0">
+            <img
+              src="./assets/img//image-product-1-thumbnail.jpg"
+              alt="shoe product image"
+              class="overlay-img__btn-img"
+            />
+          </button>
+          <button class="overlay-img__btn" data-img="1">
+            <img
+              src="./assets/img//image-product-2-thumbnail.jpg"
+              alt="shoe product image"
+              class="overlay-img__btn-img"
+            />
+          </button>
+          <button class="overlay-img__btn" data-img="2">
+            <img
+              src="./assets/img//image-product-3-thumbnail.jpg"
+              alt="shoe product image"
+              class="overlay-img__btn-img"
+            />
+          </button>
+          <button class="overlay-img__btn" data-img="3">
+            <img
+              src="./assets/img//image-product-4-thumbnail.jpg"
+              alt="shoe product image"
+              class="overlay-img__btn-img"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cart -->
+    <div class="head-cart">
+      <h3 class="head-cart__heading">Cart</h3>
+      <div class="head-cart__txt">Your cart is empty.</div>
+      <div class="head-cart__item">
+        <div class="head-cart__item-wrapper">
+          <img
+            src="./assets/img//image-product-1-thumbnail.jpg"
+            alt="cart product image"
+            class="head-cart__item-img"
+          />
+          <div class="head-cart__des">
+            <p class="head-cart__des-txt">3DHS</p>
+            <div class="head-cart__price">
+              <span class="head-cart__price-single">$125.00*3</span>
+              <span class="head-cart__price-total">$375.00</span>
+            </div>
+          </div>
+          <button class="head-cart__item-btn">
+            <img
+              src="./assets/img//icon-delete.svg"
+              alt="delete image"
+              class="head-cart__btn-img"
+            />
+          </button>
+        </div>
+
+        <button class="head-cart__btn btn--orange">Checkout</button>
+      </div>
+    </div>
+    <!-- nav atas -->
+
+    <header>
+      <nav class="navbar">
+        <h2 class="nav-logo">
+          <a href="index.html">
+            <img
+              src="./assets/img/logo.png"
+              alt="Logo Home"
+              style="width: 128px"
+            />
+          </a>
+        </h2>
+        <div class="search">
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="What are you looking for?"
+              aria-label="What are you looking for?"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+        <div class="topnav">
+          <a href="./Login.html"
+            ><i class="fa fa-user-circle fa-2x" aria-hidden="true"></i
+          ></a>
+          <button class="head-rgt__btn">
+            <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <button class="btn btn-primary" id="backs" onclick="goBack()">
+      Kembali
+    </button>
+
+    <!-- Main item container -->
+    <main class="detail-produk">
+      <section class="img">
+        <button class="img-main__btnlft img-main__btn">
+          <img
+            src="./assets/img//icon-next.svg"
+            alt="next symbol image"
+            class="img-main__btnlft-img img-main__btn-img"
+          />
+        </button>
+        <button class="img-main__btnrgt img-main__btn">
+          <img
+            src="./assets/img//icon-next.svg"
+            alt="next symbol image"
+            class="img-main__btnrgt-img img-main__btn-img"
+          />
+        </button>
+        <img src="./assets/img/1.webp" alt="" class="img-main" />
+        <div class="img-btns">
+          <button class="img-btn">
+            <img
+              src="./assets/img/det1.webp"
+              alt="shoe product image"
+              class="img-btn__img"
+            />
+          </button>
+          <button class="img-btn">
+            <img
+              src="./assets/img/det2.webp"
+              alt="shoe product image"
+              class="img-btn__img"
+            />
+          </button>
+          <button class="img-btn">
+            <img
+              src="./assets/img/det3.webp"
+              alt="shoe product image"
+              class="img-btn__img"
+            />
+          </button>
+          <button class="img-btn">
+            <img
+              src="./assets/img/det4.webp"
+              alt="shoe product image"
+              class="img-btn__img"
+            />
+          </button>
+        </div>
+      </section>
+
+      <section class="price">
+        <h2 class="price-sub__heading">by Plasticpay</h2>
+        <h1 class="price-main__heading">
+          Tas ECOBO 1 - Modern Recycle Product Plasticpay
+        </h1>
+        <p class="price-txt">
+          # 15% dari penjualan produk akan kami donasikan ke Komunitas
+          Pemulung<br />
+
+          Tas yang dapat digunakan sehari-hari untuk bekerja, hang-out atau
+          sekedar berbelanja. Terbuat dari hasil daur ulang botol plastik PET
+          dengan kualitas tinggi menjadikan produk yang ramah lingkungan serta
+          awet. Dengan menggunakan produk ini anda juga telah ikut andil dalam
+          menjaga lingkungan dari ancaman polusi sampah.<br />
+
+          Bahan<br />
+          - Felt<br />
+
+          Size<br />
+          - 40x50x8 cm<br />
+
+          Warna<br />
+          - Dark Grey<br />
+          - Light Grey<br />
+
+          Kelebihan Produk<br />
+          - Dengan menggunakan produk ini anda juga telah ikut andil dalam
+          menjaga lingkungan dari ancaman polusi sampah<br />
+          - Terbuat dari hasil recycled botol plastik PET sehingga ramah
+          lingkungan<br />
+          - Kualitas tinggi dengan modern recycle technology<br />
+          - Nyaman di gunakan<br />
+        </p>
+        <div class="price-box">
+          <div class="price-box__main">
+            <span class="price-box__main-new">€1.000,40</span>
+            <span class="price-box__main-discount"> 50%</span>
+          </div>
+          <span class="price-box__old">€2.000,80</span>
+        </div>
+
+        <div class="price-btnbox">
+          <div class="price-btns">
+            <button class="price-btn__add price-btn">
+              <img
+                src="./assets/img/icon-plus.svg"
+                alt="plus sign"
+                class="price-btn__add-img price-btn__img"
+              />
+            </button>
+            <span class="price-btn__txt">1</span>
+            <button class="price-btn__remove price-btn">
+              <img
+                src="./assets/img/icon-minus.svg"
+                alt="minus sign"
+                class="price-btn__remove-img price-btn__img"
+              />
+            </button>
+          </div>
+          <button class="btn btn-primary">
+            <a href="./checkout.html">
+              <img src="./assets/img/icon-cart.svg" alt="cart image" />
+              Add to cart</a
+            >
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="./scriptdtl.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
